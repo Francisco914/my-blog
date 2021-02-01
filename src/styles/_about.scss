@@ -1,0 +1,50 @@
+#about {
+  width: 90%;
+  margin: 0 auto;
+  max-width: 960px;
+}
+
+.user {
+  text-align: center;
+  font-size: 60px;
+  display: block;
+
+  .tech-section {
+    margin: 10px;
+
+    .tech-items {
+      display: grid;
+      grid-template-columns: 33% 33% auto;
+
+      .item {
+        svg {
+          height: 75px;
+        }
+
+        p {
+          margin-top: 0;
+          margin-bottom: 0;
+          font-size: 16px;
+        }
+      }
+    }
+  }
+}
+
+.user-details {
+  text-align: center;
+  margin: 5px auto;
+}
+
+@media (min-width: $sm) {
+  #about {
+    width: 80%;
+  }
+}
+
+@media (min-width: $md) {
+  .user {
+    display: grid;
+    grid-template-columns: 33% 33% auto;
+  }
+}
