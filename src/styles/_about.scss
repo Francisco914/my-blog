@@ -2,16 +2,12 @@
   width: 90%;
   margin: 0 auto;
   max-width: 960px;
-  @media only screen and (min-width: $cut) {
-    width: 80%;
-  }
 }
 
 .user {
   text-align: center;
   font-size: 60px;
-  display: grid;
-  grid-template-columns: 33% 33% auto;
+  display: block;
 
   .tech-section {
     margin: 10px;
@@ -19,7 +15,6 @@
     .tech-items {
       display: grid;
       grid-template-columns: 33% 33% auto;
-      border-right: solid 1px;
 
       .item {
         svg {
@@ -32,20 +27,24 @@
           font-size: 16px;
         }
       }
-
-      &.last {
-        border-right: none;
-      }
     }
-  }
-
-  @media only screen and (min-width: $cut) {
-    flex-wrap: nowrap;
-    font-size: 75px;
   }
 }
 
 .user-details {
   text-align: center;
   margin: 5px auto;
+}
+
+@media (min-width: $sm) {
+  #about {
+    width: 80%;
+  }
+}
+
+@media (min-width: $md) {
+  .user {
+    display: grid;
+    grid-template-columns: 33% 33% auto;
+  }
 }
