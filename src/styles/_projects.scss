@@ -5,7 +5,7 @@
   width: 90%;
   max-width: 960px;
   margin: 0 auto;
-  @media only screen and (min-width: $cut) {
+  @media only screen and (min-width: $lg) {
     width: 80%;
   }
 }
@@ -30,38 +30,38 @@
 }
 
 .contents {
-  @media only screen and (min-width: $cut) {
+  @media only screen and (min-width: $lg) {
     margin-left: 0;
     width: 48%;
   }
 }
 
 .contents-right {
-  @media only screen and (min-width: $cut) {
+  @media only screen and (min-width: $lg) {
     float: right;
     margin-top: -5%;
     width: 48%;
   }
 }
 .images-right {
-  @media only screen and (min-width: $cut) {
+  @media only screen and (min-width: $lg) {
     float: right;
     width: 48%;
   }
   img {
-    @media only screen and (min-width: $cut) {
+    @media only screen and (min-width: $lg) {
       float: right;
     }
   }
 }
 
 .images-left {
-  @media only screen and (min-width: $cut) {
+  @media only screen and (min-width: $lg) {
     float: left;
     width: 48%;
   }
   img {
-    @media only screen and (min-width: $cut) {
+    @media only screen and (min-width: $lg) {
       float: left;
     }
   }
@@ -79,23 +79,20 @@
   outline: none;
   text-decoration: none;
   cursor: pointer;
-  transition: color 0.3s ease-out,
-              background-color 0.3s ease-out,
-              border-color 0.3s ease-out;
+  transition: color 0.3s ease-out, background-color 0.3s ease-out,
+    border-color 0.3s ease-out;
   &:hover {
     background-color: $purple;
     border-color: $purple;
     color: #fff;
-    transition: color 0.3s ease-in,
-                background-color 0.3s ease-in,
-                border-color 0.3s ease-in;
+    transition: color 0.3s ease-in, background-color 0.3s ease-in,
+      border-color 0.3s ease-in;
   }
   &:active {
     background-color: $purple;
     border-color: $purple;
     color: #fff;
-    transition: color 0.3s ease-in,
-                background-color 0.3s ease-in,
-                border-color 0.3s ease-in;
+    transition: color 0.3s ease-in, background-color 0.3s ease-in,
+      border-color 0.3s ease-in;
   }
 }
